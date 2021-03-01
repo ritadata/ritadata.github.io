@@ -1,6 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+      <head>
+        <!-- Matomo -->
+    <script type="text/javascript">
+      var _paq = window._paq = window._paq || [];
+      /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+      _paq.push(["setCookieDomain", "*.ritapersonaldata.com"]);
+      _paq.push(['trackPageView']);
+      _paq.push(['enableLinkTracking']);
+      (function() {
+        var u="https://ritapersonaldata.matomo.cloud/";
+        _paq.push(['setTrackerUrl', u+'matomo.php']);
+        _paq.push(['setSiteId', '1']);
+        
+      })();
+    </script>
+    <script type='text/javascript' src="https://cdn.matomo.cloud/ritapersonaldata.matomo.cloud/matomo.js"></script>
+    <!-- End Matomo Code -->
     <meta charset="utf-8" />
     <meta content="IE=edge" http-equiv="X-UA-Compatible" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -20,9 +36,13 @@
       property="og:description"
       content="Rita helps you understand and control your online data and privacy, safely and immediately. Whenever you want."
     />
-    <meta
+    <!-- <meta
       property="og:video"
       content="https://ritapersonaldata.com/static/video/demo.mp4"
+    /> -->
+    <meta
+      property="og:video"
+      content="https://ritapersonaldata.com/static/video/dashboard_mockup.mp4"
     />
     <meta name="author" content="Rita Team" />
     <meta
@@ -39,21 +59,18 @@
     <title>Rita - Your data, in your hands</title>
     <!-- CSS -->
     <link href="static/css/style.min.css" media="screen" rel="stylesheet" />
-    <!-- Google Tag Manager -->
-    <script>
-      (function (w, d, s, l, i) {
-        w[l] = w[l] || [];
-        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
-        var f = d.getElementsByTagName(s)[0],
-          j = d.createElement(s),
-          dl = l != "dataLayer" ? "&l=" + l : "";
-        j.async = true;
-        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
-        f.parentNode.insertBefore(j, f);
-      })(window, document, "script", "dataLayer", "GTM-WPFL872");
-    </script>
-    <!-- End Google Tag Manager -->
+    
+    <!-- Matomo Tag Manager -->
+<script type="text/javascript">
+  var _mtm = window._mtm = window._mtm || [];
+  _mtm.push({'mtm.startTime': (new Date().getTime()), 'event': 'mtm.Start'});
+  var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+  g.type='text/javascript'; g.async=true; g.src='https://cdn.matomo.cloud/ritapersonaldata.matomo.cloud/container_9kLldWI4.js'; s.parentNode.insertBefore(g,s);
+  </script>
+  <!-- End Matomo Tag Manager -->
+
   </head>
+
   <body>
     <!-- Header start -->
     <header>
@@ -67,11 +84,10 @@
             </div>
             <div class="header__menu">
               <ul>
-                <li><a href="#" class="active">Overview</a></li>
+                <li><a href="#" class="active">About</a></li>
+                <li><a>Features</a></li>
                 <li><a href="#mission">Our Mission</a></li>
-                <li><a href="#safety">Safety</a></li>
                 <li><a href="#pricing">Pricing</a></li>
-                <li><a href="#testimonial">Testimonials</a></li>
                 <li><a href="/blog">Blog</a></li>
               </ul>
             </div>
@@ -96,19 +112,19 @@
               </div>
             </div>
             <div class="header__button">
-              <a
+              <!-- <a
                 href="https://app.ritapersonaldata.com/join/"
                 class="button"
                 target="_blank"
               >
                 Sign Up
-              </a>
-              <a
+              </a> -->
+              <!-- <a
                 href="https://app.ritapersonaldata.com/signin/"
                 class="button button--outline"
               >
                 Log In
-              </a>
+              </a> -->
             </div>
           </div>
         </div>
@@ -122,15 +138,16 @@
         <div class="sidebar__menu">
           <ul>
             <li><a href="#" class="active">Overview</a></li>
+            <li><a>Features</a></li>
             <li><a href="#mission">Our Mission</a></li>
-            <li><a href="#safety">Safety</a></li>
+            <!-- <li><a href="#safety">Safety</a></li> -->
             <li><a href="#pricing">Pricing</a></li>
-            <li><a href="#testimonial">Testimonials</a></li>
+            <!-- <li><a href="#testimonial">Testimonials</a></li> -->
             <li><a href="/blog">Blog</a></li>
           </ul>
         </div>
         <div class="sidebar__button">
-          <a
+          <!-- <a
             href="https://app.ritapersonaldata.com/join/"
             class="button button--outline"
             target="_blank"
@@ -139,7 +156,7 @@
           </a>
           <a href="https://app.ritapersonaldata.com/signin/" class="button">
             Login
-          </a>
+          </a> -->
         </div>
       </div>
     </div>
@@ -151,25 +168,45 @@
       <div class="new_banner">
         <div class="new_banner_text">
           <h1>
-            Your data, <br />
-            in your hands.
+            GDPR in your pocket. <br />
           </h1>
           <p>
-            Rita is a tool that helps you understand and control your online
-            data and privacy, safely and immediately. Whenever you want. For
-            free.
+            Effortlessly invoke your data rights.
+            <span style="color: #03b898">In total privacy</span>.
+            <!-- You don’t need to be a data engineer to <span style="color: #2EBFA5; text-decoration:underline;">understand</span> your data. Rita makes it easy for you with a couple of clicks. -->
           </p>
-          <a
-            href="https://app.ritapersonaldata.com/join/"
-            class="button"
-            target="_blank"
-          >
-            Sign Up
-          </a>
+          <div class="email-form">
+            <!-- <form> -->
+            <input
+              type="text"
+              id="emailInputBox"
+              placeholder=" Enter your email address"
+            />
+            <br /><br />
+            <button type="submit" class="button_form" id="emailInputSubmit">
+              Get early access
+            </button>
+            <!-- </form> -->
+          </div>
         </div>
 
-        <div class="new_banner_img">
-          <img src="static/img/hero_img_new1.png" alt="" />
+        <div class="new_banner_video">
+          <video
+            autoplay
+            preload
+            loop
+            muted
+            playsinline
+            width="100%"
+            id="video1"
+          >
+            <source
+              preload
+              poster="img/dashboard_mockup.png"
+              src="static/video/mobile.mp4"
+              type="video/mp4"
+            />
+          </video>
         </div>
       </div>
     </section>
@@ -178,9 +215,17 @@
     <section id="ad-tool">
       <div class="form_container">
         <div class="container">
-          <h2>Average user's data in numbers</h2>
+          <!-- <h2>Average user's data in numbers</h2> -->
           <div class="row">
             <div class="form_numbers">
+              <div class="col-lg-4">
+                <div class="numbers">
+                  <p>&#8205;</p>
+                  <h3>Try it out!</h3>
+                  <p>&#8205;</p>
+                </div>
+              </div>
+
               <div class="col-lg-4">
                 <div class="numbers">
                   <p>Earned</p>
@@ -204,11 +249,34 @@
                   <p>ads</p>
                 </div>
               </div>
+
+              <div class="col-lg-4">
+                <div class="numbers">
+                  <p>Input your daily hours online</p>
+                  <div class="sub-form">
+                    <form>
+                      <input
+                        type="number"
+                        id="numberInputBox"
+                        min="0"
+                        max="24"
+                      />
+                      <button
+                        type="submit"
+                        class="button_form"
+                        id="numberInputSubmit"
+                      >
+                        check
+                      </button>
+                    </form>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
 
-        <p>
+        <!-- <p>
           Enter the number of hours you spend online daily to get a personalized
           report.
         </p>
@@ -220,7 +288,7 @@
               check
             </button>
           </form>
-        </div>
+        </div> -->
       </div>
     </section>
 
@@ -379,10 +447,8 @@
                     </div>
                     <div class="collect__text">
                       <p>
-                        Sign up and within a few clicks, understand your data
-                        from your favorite websites. With the help of our guide
-                        you’ll have all the information about you stored
-                        securely.
+                        Sign up and within a few clicks, invoke your right to portability from multiple companies.
+                        It's all automated and stored on your device..
                       </p>
                     </div>
                   </div>
@@ -563,13 +629,12 @@
                   <div class="choose__heading">
                     <div class="common-content">
                       <img src="static/img/step_3.svg" alt="" id="step_img" />
-                      <h2>Choose.</h2>
+                      <h2>Control.</h2>
                     </div>
                     <div class="collect__text">
                       <p>
-                        Choose which information companies can and can’t access.
-                        Rita’s data management tools allow you to be in full
-                        control within seconds.
+                        Rita’s data management tools allow you to send right to erasure requests within seconds.
+                        This means these companies have the legal obligation to delete your data.
                       </p>
                     </div>
                   </div>
@@ -593,14 +658,6 @@
           it. You are the only one who has access and can choose who can and
           can’t look at it.
         </p>
-        <a href="#" class="link"> Learn More </a>
-
-        <h3>Still not sure?</h3>
-        <p>
-          If you change your mind you can delete your file from Rita dashboard
-          any time. Forever.
-        </p>
-        <a href="#" class="link"> Learn More </a>
       </div>
       <div class="safety_image step-order-two">
         <img src="static/img/safety.png" alt="a girl holding a lock" />
@@ -638,13 +695,13 @@
               <span>Restrict data access</span>
             </li>
           </ul>
-          <a
+          <!-- <a
             href="https://app.ritapersonaldata.com/join/"
             class="button"
             target="_blank"
           >
             Sign Up
-          </a>
+          </a> -->
           <p>Get free access to our Alpha version.</p>
         </div>
         <div class="plan_container_right">
@@ -713,7 +770,7 @@
               </div>
             </div>
             <div class="row">
-              <div class="col-lg-4">
+              <div class="col-lg-44">
                 <div class="user-say__box">
                   <div class="user-say__box-header">
                     <div class="user-say__box-image">
@@ -733,7 +790,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-lg-4">
+              <div class="col-lg-44">
                 <div class="user-say__box">
                   <div class="user-say__box-header">
                     <div class="user-say__box-image">
@@ -755,7 +812,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-lg-4">
+              <div class="col-lg-44">
                 <div class="user-say__box">
                   <div class="user-say__box-header">
                     <div class="user-say__box-image">
@@ -789,13 +846,13 @@
                   <div class="common-content">
                     <h2>Sign up for our Alpha Version.</h2>
                   </div>
-                  <a
+                  <!-- <a
                     href="https://app.ritapersonaldata.com/join/"
                     class="button"
                     target="_blank"
                   >
                     Sign Up
-                  </a>
+                  </a> -->
                 </div>
               </div>
             </div>
@@ -810,19 +867,19 @@
       <div class="container">
         <div class="counter__inner">
           <div class="row">
-            <div class="col-lg-4">
+            <div class="col-lg-44">
               <div class="counter__item">
                 <h1>1,789,068</h1>
                 <p>Data Points Presented</p>
               </div>
             </div>
-            <div class="col-lg-4">
+            <div class="col-lg-44">
               <div class="counter__item">
                 <h1>€47,980</h1>
                 <p>Total Data Value</p>
               </div>
             </div>
-            <div class="col-lg-4">
+            <div class="col-lg-44">
               <div class="counter__item">
                 <h1>76</h1>
                 <p>Alpha Testers</p>
@@ -849,7 +906,7 @@
           </div>
           <div class="col-md-4">
             <div class="copyright">
-              <p>© 2020 Rita. All Rights Reserved</p>
+              <p>© 2021 Rita. All Rights Reserved</p>
             </div>
           </div>
           <div class="col-md-4">
@@ -866,18 +923,22 @@
     </footer>
     <!-- Footer end -->
 
-    <!-- Google Tag Manager (noscript) -->
-    <noscript
-      ><iframe
-        src="https://www.googletagmanager.com/ns.html?id=GTM-WPFL872"
-        height="0"
-        width="0"
-        style="display: none; visibility: hidden"
-      ></iframe
-    ></noscript>
-    <!-- End Google Tag Manager (noscript) -->
     <!-- Main js file -->
     <script src="static/js/script.js "></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript">
+      function preloadFunc() {
+        // var vid = document.getElementById("video1");
+        // var videoFile = 'static/video/dashboard_mockup2.mov';
+        // $('#video1').attr('src', videoFile);
+        // $("#video1")[0].load();
+      }
+
+      window.onpaint = preloadFunc();
+      document.onreadystatechange = function () {
+        console.log(document.readyState);
+      };
+    </script>
     <!-- CounterUp.JS -->
     <script src="static/js/count.js" type="module"></script>
   </body>
