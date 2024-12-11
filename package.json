@@ -4,6 +4,7 @@
   "description": "Landing page for ritapersonaldata.com",
   "main": "index.html",
   "devDependencies": {
+    "gh-pages": "^5.0.0",
     "htmlhint": "^0.14.1",
     "husky": "^4.3.0",
     "lint-staged": "^10.4.0",

@@ -1,682 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="utf-8"/>
-    <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <meta name="title" content="Rita - It's your data, own it."/>
-    <meta
-            name="description"
-            content="Rita helps you understand and control your online data and privacy, safely and immediately. Whenever you want."
-    />
-    <meta property="og:title" content="Rita - It's your data, own it."/>
-    <meta property="og:type" content="website"/>
-    <meta property="og:url" content="https://ritapersonaldata.com/"/>
-    <meta
-            property="og:image"
-            content="https://ritapersonaldata.com/static/img/referral_icon.png"
-    />
-    <meta
-            property="og:description"
-            content="Collect, view and control your data. Smoothly, and in total privacy."
-    />
-    <!-- <meta
-      property="og:video"
-      content="https://ritapersonaldata.com/static/video/demo.mp4"
-    /> -->
-    <meta
-            property="og:video"
-            content="https://ritapersonaldata.com/static/video/dashboard_mockup.mp4"
-    />
-    <meta name="author" content="Rita Team"/>
-    <meta
-            name="keywords"
-            content="Rita, Personal, Data, Privacy, Social Networks, Facebook, Instagram, Google, Social, Security, Free"
-    />
-    <link rel="apple-touch-icon" href="static/img/logo_final.svg"/>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rita</title>
+
     <link
-            rel="icon"
-            type="ico"
-            sizes="16x16"
-            href="static/img/logo_final.svg"
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
     />
-    <title>Rita - It's your data, own it.</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <!-- CSS -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap"
-          rel="stylesheet">
-    <link rel="stylesheet" href="OwlCarousel/dist/assets/owl.carousel.min.css">
-    <script src="OwlCarousel/dist/owl.carousel.min.js"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
-          integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
-            crossorigin="anonymous"></script>
-    <link href="../static/css/business/style.min.css" media="screen" rel="stylesheet"/>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-</head>
-
-<body>
-<!-- Header start -->
-<header>
-    <div class="header" style="padding-top: 36px; padding-bottom: 40px;">
-        <div class="container">
-            <div class="header__inner">
-                <div class="header__logo">
-                    <a href="index.html">
-                        <img src="../static/img/rita_logo_white.svg" alt="rita logo"/>
-                    </a>
-                    <a href="index.html" class="site-name">
-                        Rita for Brands
-                    </a>
-                </div>
-                <div class="header__menu">
-                    <ul style="align-items: center;">
-                        <li>
-                          <a href="https://ritapersonaldata.com/" style="background-color: #242C57; margin-right: 32px" id="request-demo" target="_blank" rel="noopener noreferrer">
-                              <p style="margin-bottom: 0; color: #FFD5C3; text-align: center;" class="business-header-buttons" onclick='sa_event("Rita_Mobile_App");'>Rita Mobile App</p>
-                          </a>
-                        </li>
-                        <li>
-                            <a href="https://pz4vmmqvaka.typeform.com/to/f572NX4A" id="request-demo" target="_blank" rel="noopener noreferrer">
-                                <p style="margin-bottom: 0; text-align: center;" class="business-header-buttons" onclick='sa_event("Access_Platform_1");'>Access Platform</p>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="header__menu-icon">
-                    <div class="menu-icon">
-                        <img src="static/img/li_menu.svg" alt="">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</header>
-<!-- Header end -->
-
-<!-- Sidebar start -->
-<div class="sidebar">
-    <div class="sidebar__inner">
-        <div style="display: flex; width: 100%; justify-content: space-between; align-items: center; padding-left: 24px; padding-right: 10px; margin-bottom: 50px;">
-            <img class="mb-2" src="static/img/sidebar_logo.svg" alt="">
-            <div class="close-sidebar">
-                <img class="mb-2" src="static/img/x.svg">
-            </div>
-
-        </div>
-        <div class="sidebar__menu">
-            <ul>
-                <li><a href="./index.html" style="font-weight: 600;">How it works?</a></li>
-                <li><a href="./about.html" class="active">About us</a></li>
-                <li><a href="./index.html#faq">FAQ</a></li>
-                <li><a href="https://medium.com/@rita_personal_data" target="_blank" rel="noopener noreferrer">Blog</a></li>
-                <li>
-                    <a href="https://app.adjust.com/768u4g3" target="_blank" rel="noopener noreferrer">
-                        <p style="margin-bottom: 0; margin-right: 8px; font-family: 'Inter', sans-serif; font-weight: 500; font-size: 16px;">Download Rita now</p>
-                        <img src="static/img/green_download.svg" alt="">
-                    </a>
-                </li>
-            </ul>
-        </div>
-        <div class="sidebar__button">
-        </div>
-    </div>
-</div>
-<!-- Sidebar end -->
-
-<section id="start">
-    <div class="container-fluid banner1" style="padding-top: 85px">
-        <div class="row" style="max-width: none;">
-            <div class="col-lg-6 col-xl-6 banner1_description">
-                <div class="banner-text">
-                    <h1 class="h1-title">Know what your customers do elsewhere. </h1>
-                    <p class="p-text">Empower your customer insights with privacy-first behavioural data. Get access to accurate and consented data from +100,000 of EU consumers. Simply by rewarding them.</p>
-
-              
-                    <div class="get-app-container">
-                        <a href="https://pz4vmmqvaka.typeform.com/to/f572NX4A" target="_blank" rel="noopener noreferrer" id="request-demo-banner1">
-                            <p style="margin-bottom: 0;color: #242C57;font-family: 'Inter', sans-serif;font-weight: 500;font-size: 16px;" onclick='sa_event("Access_Platform_2");'>Access Platform</p>
-                        </a>
-                    </div>
-                    
-                    <div class="phone-header m-display">
-                        <img src="../static/img/hero.png" class="phone-img" alt="">
-                    </div>
-
-                </div>
-            </div>
-            <div class="col-lg-6 col-xl-6">
-                <div class="phone-header d-display">
-                    <img src="../static/img/hero.png" class="phone-img" alt="">
-                </div>
-            </div>
-        </div>
-        <h1 class="h1-title as-seen-title">As seen in</h1>
-    </div>
-</section>
-
-<section>
-    <div class="as-seen-in">
-        <img src="../static/img/larepubblica.svg" />
-        <img src="../static/img/eustartups.png" />
-        <img src="../static/img/detijd.svg" />
-        <img src="../static/img/siliconcanais.png" />
-        <img src="../static/img/techeu.svg" />
-        <img src="../static/img/lentrepeneur.png" />
-        <img src="../static/img/computable.png" />
-    </div>
-
-    <div class="as-seen-in-mobile">
-        <img src="../static/img/larepubblica.svg"  style="height: auto; width: 100%;"/>
-        <img src="../static/img/eustartups.png" style="height: auto; width: 100%;" />
-        <img src="../static/img/siliconcanais.png" style="height: auto; width: 100%;" />
-        <img src="../static/img/techeu.svg" style="height: 34px; width: 150px;" />
-        <img src="../static/img/lentrepeneur.png" style="height: auto; width: 100%;" />
-        <img src="../static/img/computable.png" style="height: auto; width: 100%;" />
-    </div>
-</section>
-
-<div style="background: #242C57; border-radius: 24px 24px 0px 0px; display: flex; flex-direction: column; align-items: center;"> 
-    <h1 class="h1-title" style="color: white;margin-top: 150px;text-align: center;font-weight: 400;">Drive results using unparalleled insights</h1>
-    <div class="row" style="margin-bottom: 220px; margin-top: 40px;">
-        <div class="col-lg-3 col-xl-4" style="margin-top: 72px;">
-            <div>
-                <img class="drive-using-insights" src="../static/img/Journey.svg" />
-                <p style="color: white; font-family: 'Inter', serif; font-weight: 600; font-size: 24px; text-align: center;">Customer Journey</p>
-                <p style="color: white; font-family: 'Inter', sans-serif; font-weight: 400; font-size: 16px; text-align: center;">Use Rita to understand how your customers are interacting with your online product and services.</p>
-            </div>
-        </div>
-        <div class="col-lg-3 col-xl-4" style="margin-top: 72px;">
-            <div>
-                <img class="drive-using-insights" src="../static/img/pie-chart.svg" />
-                <p style="color: white; font-family: 'Inter', serif; font-weight: 600; font-size: 24px; text-align: center;">Brand Awareness</p>
-                <p style="color: white; font-family: 'Inter', sans-serif; font-weight: 400; font-size: 16px; text-align: center;">Understand your brand awareness and Mind Share using behavioural events on mobile and web.</p>
-            </div>
-        </div>
-        <div class="col-lg-3 col-xl-4" style="margin-top: 72px;">
-            <div>
-                <img class="drive-using-insights" src="../static/img/bar-chart-2.svg" />
-                <p style="color: white; font-family: 'Inter', serif; font-weight: 600; font-size: 24px; text-align: center;">Benchmark Competitors</p>
-                <p style="color: white; font-family: 'Inter', sans-serif; font-weight: 400; font-size: 16px; text-align: center;">Compare your engagement, conversion rates and customer journey with competitors.</p>
-            </div>
-        </div>
-        <div class="col-lg-3 col-xl-4" style="margin-top: 72px;">
-            <div>
-                <img class="drive-using-insights" src="../static/img/file-search.svg" />
-                <p style="color: white; font-family: 'Inter', serif; font-weight: 600; font-size: 24px; text-align: center;">Discover Unmet needs</p>
-                <p style="color: white; font-family: 'Inter', sans-serif; font-weight: 400; font-size: 16px; text-align: center;">Launch new products and features by understanding your customer painpoints in more depth.</p>
-            </div>
-        </div>
-
-    </div>
-</div>
-
-<div style="background: #242C57">
-    <!-- demonstration section begin -->
-    <div class="demo_text" id="overview">
-        <h1 class="h1-title" style="text-align: center; margin-bottom: 50px;">How it works</h1>
-    </div>
-    <div class="demo_section row-container">
-        <div class="container-fluid padding new_demo_banner">
-            <div class="how-it-works">
-                <div class="grid-how-it-works">
-                    <button class="p-3 demo_grid" id="demo_grid1" onclick="Step1()">
-                        <div class="row">
-                            <div class="demo_numbers">
-                                1
-                            </div>
-                            <div class="demo_category" id="cat-1">
-                                Choose Audience
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-xs-12 col-11 demo_description" id="desc-1">
-                                Which customers you would like to learn more about?
-                            </div>
-                        </div>
-                    </button>
-                    <button class="p-3 demo_grid" id="demo_grid2" onclick="Step2()">
-                        <div class="row">
-                            <div class="demo_numbers">
-                                2
-                            </div>
-                            <div class="demo_category" id="cat-2">
-                                Define Rewards
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-xs-12 col-11 demo_description" id="desc-2">
-                                How do you want to reward the Rita members?
-                            </div>
-                        </div>
-                    </button>
-                    <button class="p-3 demo_grid" id="demo_grid3" style="grid-column-start: 1; grid-column-end: 3;" onclick="Step3()">
-                        <div class="row">
-                            <div>
-                                <p class="demo_numbers">3</p>
-                            </div>
-                            <div class="demo_category" id="cat-3" style="width: 70%;">
-                                Take action
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-xs-12 col-11 demo_description" id="desc-3">
-                                Discover and interpret your insights in our data dashboards.
-                            </div>
-                        </div>
-                    </button>
-                </div>
-                <div class="col-md-6 col-lg-6 image_demo" id="step1">
-                    <div class="demo-wrap">
-                        <img src="../static/img/howitworks1.png" class="new_img">
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-6 image_demo" id="step2">
-                    <div class="demo-wrap">
-                        <img src="../static/img/howitworks2.png" class="new_img">
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-6 image_demo" id="step3">
-                    <div class="demo-wrap">
-                        <img src="../static/img/howirworks3.png" class="new_img">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="demo_section_mobile d-flex-mobile">
-        <div class="row" style="margin-bottom: 100px;">
-            <div class="col-lg-3 col-xl-4" style="margin-top: 72px;">
-                <div>
-                    <div class="demo_numbers_mobile" style="margin: 0 auto 30px; display: block;">
-                        1
-                    </div>
-
-                    <p style="color: white; font-family: 'Inter', serif; font-weight: 600; font-size: 24px; text-align: center;">Choose Audience</p>
-                    <p style="color: white; font-family: 'Inter', sans-serif; font-weight: 400; font-size: 16px; text-align: center;">Which customers you would like to learn more about?</p>
-                    <img src="../static/img/howitworks1.png" style="width: 100%; height: 100%;">
-                </div>
-            </div>
-            <div class="col-lg-3 col-xl-4" style="margin-top: 72px;">
-                <div>
-                    <div class="demo_numbers_mobile" style=" margin: 0 auto 30px; display: block;">
-                        2
-                    </div>
-
-                    <p style="color: white; font-family: 'Inter', serif; font-weight: 600; font-size: 24px; text-align: center;">Define Rewards</p>
-                    <p style="color: white; font-family: 'Inter', sans-serif; font-weight: 400; font-size: 16px; text-align: center;">How do you want to reward the Rita members?</p>
-                    <img src="../static/img/howitworks2.png" style="width: 100%; height: 100%;">
-
-                </div>
-            </div>
-            <div class="col-lg-3 col-xl-4" style="margin-top: 72px;">
-                <div>
-                    <div class="demo_numbers_mobile" style=" margin: 0 auto 30px; display: block;">
-                        3
-                    </div>
-
-                    <p style="color: white; font-family: 'Inter', serif; font-weight: 600; font-size: 24px; text-align: center;">Take action</p>
-                    <p style="color: white; font-family: 'Inter', sans-serif; font-weight: 400; font-size: 16px; text-align: center;">Discover and interpret your insights in our data dashboards.</p>
-                    <img src="../static/img/howirworks3.png" style="width: 100%; height: 100%;">
-                </div>            
-            </div>
-        </div>
-    </div>
-
-    <!-- demonstration section end -->
-    <script>
-        var i = 1;
-        function myLoop() {
-            setInterval(function() {
-                if (i < 4) {
-                    if (i===1){
-                        $("#demo_grid1").click();
-                    }
-                    if (i===2){
-                        $("#demo_grid2").click();
-                    }
-                    if (i===3){
-                        $("#demo_grid3").click();
-                    }
-                    i++;
-                }     else {
-                    i=1;
-                }
-            }, 3000)
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
+    <!-- LiveSession.io code -->
+    <script type="text/javascript">
+      window["__ls_namespace"] = "__ls";
+      window["__ls_script_url"] = "https://cdn.livesession.io/track.js";
+      !(function (w, d, t, u, n) {
+        if (n in w) {
+          if (w.console && w.console.log) {
+            w.console.log(
+              'LiveSession namespace conflict. Please set window["__ls_namespace"].'
+            );
+          }
+          return;
         }
+        if (w[n]) return;
+        var f = (w[n] = function () {
+          f.push ? f.push.apply(f, arguments) : f.store.push(arguments);
+        });
+        if (!w[n]) w[n] = f;
+        f.store = [];
+        f.v = "1.1";
 
-        myLoop();
+        var ls = d.createElement(t);
+        ls.async = true;
+        ls.src = u;
+        var s = d.getElementsByTagName(t)[0];
+        s.parentNode.insertBefore(ls, s);
+      })(
+        window,
+        document,
+        "script",
+        window["__ls_script_url"],
+        window["__ls_namespace"]
+      );
 
-        function Step1() {
-            document.getElementById('step1').style.display = 'block';
-            document.getElementById('step2').style.display = 'none';
-            document.getElementById('step3').style.display = 'none';
-
-            document.getElementById('demo_grid1').classList.add('demo_grid_selected');
-            document.getElementById('demo_grid2').classList.remove('demo_grid_selected');
-            document.getElementById('demo_grid3').classList.remove('demo_grid_selected');
-        }
-
-        function Step2() {
-            document.getElementById('step1').style.display = 'none';
-            document.getElementById('step2').style.display = 'block';
-            document.getElementById('step3').style.display = 'none';
-            document.getElementById('demo_grid1').style.background = 'white !important';
-
-            document.getElementById('demo_grid1').classList.remove('demo_grid_selected');
-            document.getElementById('demo_grid2').classList.add('demo_grid_selected');
-            document.getElementById('demo_grid3').classList.remove('demo_grid_selected');
-        }
-
-        function Step3() {
-            document.getElementById('step1').style.display = 'none';
-            document.getElementById('step2').style.display = 'none';
-            document.getElementById('step3').style.display = 'block';
-            document.getElementById('demo_grid1').style.background = 'white !important';
-
-            document.getElementById('demo_grid1').classList.remove('demo_grid_selected');
-            document.getElementById('demo_grid2').classList.remove('demo_grid_selected');
-            document.getElementById('demo_grid3').classList.add('demo_grid_selected');
-        }
+      __ls("init", "aea341d9.f025f5be", { keystrokes: true });
+      __ls("newPageView");
     </script>
+    <!-- END LiveSession.io code -->
+  </head>
+  <body>
+    <div id="root"></div>
 
-<div style="background: #242C57; border-radius: 24px 24px 0px 0px; display: flex; flex-direction: column; align-items: center;">
-    <h1 class="h1-title" style="color: white;margin-top: 0px;text-align: center;font-weight: 400;">Stay ahead of the curve</h1>
-    <div class="row" style="margin-bottom: 220px; margin-top: 40px;">
-        <div class="col-lg-3 col-xl-4" style="margin-top: 72px;">
-            <div>
-                <img class="drive-using-insights" src="../static/img/zap.svg" />
-                <p style="color: white; font-family: 'Inter', serif; font-weight: 600; font-size: 24px; text-align: center;">Fast</p>
-                <p style="color: white; font-family: 'Inter', sans-serif; font-weight: 400; font-size: 16px; text-align: center;">Don't wait months for a research agency. Collect and explore your customer insights in days.</p>
-            </div>
-        </div>
-        <div class="col-lg-3 col-xl-4" style="margin-top: 72px;">
-            <div>
-                <img class="drive-using-insights" src="../static/img/crown.svg" />
-                <p style="color: white; font-family: 'Inter', serif; font-weight: 600; font-size: 24px; text-align: center;">Reliable</p>
-                <p style="color: white; font-family: 'Inter', sans-serif; font-weight: 400; font-size: 16px; text-align: center;">No Doubts, No Guesswork. Make decisions based on truthful and robust data.</p>
-            </div>
-        </div>
-        <div class="col-lg-3 col-xl-4" style="margin-top: 72px;">
-            <div>
-                <img class="drive-using-insights" src="../static/img/layout-dashboard.svg" />
-                <p style="color: white; font-family: 'Inter', serif; font-weight: 600; font-size: 24px; text-align: center;">Agile</p>
-                <p style="color: white; font-family: 'Inter', sans-serif; font-weight: 400; font-size: 16px; text-align: center;">Prevent wasted resources into unactionable results. Pivot your research based on new findings and dive deeper into the relevant insights.</p>
-            </div>
-        </div>
-        <div class="col-lg-3 col-xl-4" style="margin-top: 72px;">
-            <div>
-                <img class="drive-using-insights" src="../static/img/layout-dashboard.svg" />
-                <p style="color: white; font-family: 'Inter', serif; font-weight: 600; font-size: 24px; text-align: center;">Ethical</p>
-                <p style="color: white; font-family: 'Inter', sans-serif; font-weight: 400; font-size: 16px; text-align: center;">Avoid GDPR risks. Our data goes beyond compliance, it’s ethical data. Consumers transparently give you permission to use their insights.</p>
-            </div>
-        </div>
-    </div>
-</div>
+    <script src="https://unpkg.com/react@16.14.0/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@16.14.0/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone@7.15.0/babel.min.js"></script>
 
-<div class="d-flex d-flex-desktop" style="justify-content: center;">
-    <div class="container" style="padding-bottom: 90px">
-        <div class="col-md-12">
-            <div class="make-data-work" style="padding-top: 80px; padding-bottom: 80px; border-radius: 12px; display: flex; align-items: center; justify-content: center; flex-direction: column;">
-                <h1 class="h1-title" style="font-size: 64px; font-weight: 400; color: #242C57; text-align: center; margin-bottom: 65px;">Let's make data work for everyone!<br/>
-                    Get unparalleled insights from customers, by rewarding them. </h1>
-                <a href="https://pz4vmmqvaka.typeform.com/to/f572NX4A" target="_blank" rel="noopener noreferrer" style="color: white; font-family: 'Inter', sans-serif; font-weight: 500; cursor: pointer; background: #242C57; border-radius: 12px; height: 56px; padding-left: 16px; padding-right: 16px; display: flex; align-items: center; justify-content: center;">
-                    <p style="margin-bottom: 0; font-size: 16px;" onclick='sa_event("Access_Platform_3");'>Access Platform</p>       
-                                </a>
-            </div>
-        </div>
-    </div>
-</div>
+    <script type="text/babel" data-presets="env,react" src="index.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
 
-<div class="d-flex d-flex-mobile" style="justify-content: center;">
-    <div class="container" style="padding-bottom: 90px">
-        <div class="col-md-12">
-            <div class="make-data-work" style="padding-top: 80px; padding-bottom: 80px; border-radius: 12px; display: flex; align-items: center; justify-content: center; flex-direction: column;">
-                <h1 class="h1-title" style="font-size: 24px; font-weight: 400; color: #242C57; text-align: center; margin-bottom: 65px;">Let's make data work for everyone!<br/>
-                    Get unparalleled insights from customers, by rewarding them. </h1>
-                <a href="https://pz4vmmqvaka.typeform.com/to/f572NX4A" target="_blank" rel="noopener noreferrer" style="color: white; font-family: 'Inter', sans-serif; font-weight: 500; cursor: pointer; background: #242C57; border-radius: 12px; height: 56px; padding-left: 16px; padding-right: 16px; display: flex; align-items: center; justify-content: center;">
-                    <p style="margin-bottom: 0; font-size: 16px;" onclick='sa_event("Access_Platform_3");'>Access Platform</p>       
-                                </a>
-            </div>
-        </div>
-    </div>
-</div>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
 
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/16.14.0/umd/react.development.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/16.14.0/umd/react-dom.development.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.min.js"></script>
 
-<div class="d-flex d-flex-desktop" style="justify-content: center;">
-    <div class="row" style="padding-top: 30px; padding-bottom: 50px;">
-        <div class="col-sm-6 col-lg-4 discover">
-            <div class="discover-left">
-                <h1 style="font-size: 64px; line-height: 80px; color: white; font-family:'Fraunces'; font-weight: 600;">Discover the future of research</h1>
-                <h3 style="margin-top: 8px;font-size: 16px; line-height: 24px; color: white; font-family:'Inter'; font-weight: 400;">Please fill the form below and we will contact you for a live demo or book a spot for a call.</h3>
-            </div>
-            <div class="discover-right">
-                <a href="https://pz4vmmqvaka.typeform.com/to/f572NX4A" target="_blank" rel="noopener noreferrer" style="color: white; font-family: 'Inter', sans-serif; font-weight: 500; cursor: pointer; background: #242C57; border-radius: 12px; height: 56px; padding-left: 16px; padding-right: 16px; display: flex; align-items: center; justify-content: center;">
-                    <p class="discover-right-button discover-right-button-inverted" style="margin-bottom: 0; font-size: 16px; border: #FFD5C3 1px solid ;" onclick='sa_event("Send_Demo_Request");'>Send Demo Request</p>       
-                </a>
-                <div style="display: flex;align-items: center;justify-content: center;">
-                    <div style="height: 1px;width: 90%;background: #333E7B;"></div>
-                    <p style="position: absolute;margin: 0;background: #252c57;color: #C5CAE7;width: 50px;text-align: center;">Or</p>
-                </div>
-                <a href="https://calendly.com/johnarts/chat" target="_blank" rel="noopener noreferrer" style="color: white; font-family: 'Inter', sans-serif; font-weight: 500; cursor: pointer; background: #242C57; border-radius: 12px; height: 56px; padding-left: 16px; padding-right: 16px; display: flex; align-items: center; justify-content: center;">
-                    <p class="discover-right-button" style="margin-bottom: 0; font-size: 16px; border: #FFD5C3 1px solid ;" onclick='sa_event("Book_a_slot");'>Book a slot</p>       
-                </a>
-            </div>
-        </div>
-        <div class="col-sm-6 col-lg-8" style="height: 100px;">
-            
-        </div>
-    </div>
-</div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css"
+    />
 
-<div class="d-flex d-flex-mobile" style="justify-content: center;">
-    <div class="row" style="padding-top: 30px; padding-bottom: 50px;">
-        <div class="col-sm-6 col-lg-5" style="text-align: center">
-                <h1 style="font-size: 64px; line-height: 80px; color: white; font-family:'Fraunces'; font-weight: 600;">Discover the future of research.</h1>
-                <h3 style="margin-top: 8px;font-size: 16px; line-height: 24px; color: white; font-family:'Inter'; font-weight: 400;">Please fill the form below and we will contact you for a live demo or book a spot for a call</h3>
-        </div>
-        <div class="col-sm-6 col-lg-7" style="margin-top: 48px;">
-            <a href="https://pz4vmmqvaka.typeform.com/to/f572NX4A" target="_blank" rel="noopener noreferrer" style="color: white; font-family: 'Inter', sans-serif; font-weight: 500; cursor: pointer; background: #242C57; border-radius: 12px; height: 56px; padding-left: 16px; padding-right: 16px; display: flex; align-items: center; justify-content: center;">
-                <p class="discover-right-button discover-right-button-inverted" style="margin-bottom: 0; font-size: 16px; border: #FFD5C3 1px solid ;" onclick='sa_event("Send_Demo_Request");'>Send Demo Request</p>       
-            </a>
-            <div style="display: flex;align-items: center;justify-content: center; margin-top: 24px; margin-bottom: 24px;">
-                <div style="height: 1px;width: 90%;background: #333E7B;"></div>
-                <p style="position: absolute;margin: 0;background: #252c57;color: #C5CAE7;width: 50px;text-align: center;">Or</p>
-            </div>
-            <a href="https://calendly.com/johnarts/chat" target="_blank" rel="noopener noreferrer" style="color: white; font-family: 'Inter', sans-serif; font-weight: 500; cursor: pointer; background: #242C57; border-radius: 12px; height: 56px; padding-left: 16px; padding-right: 16px; display: flex; align-items: center; justify-content: center;">
-                <p class="discover-right-button" style="margin-bottom: 0; font-size: 16px; border: #FFD5C3 1px solid ;">Book a slot</p>       
-            </a>
-
-        </div>
-    </div>
-</div>
-
-
-<!-- Footer start -->
-<footer class="pt-4 pt-md-5 border-top footer-section">
-    <div class="row">
-        <div class="col-12 col-md d-display">
-            <a href="#"><img class="mb-2" src="../static/img/footer_logo.svg" alt=""></a>
-            <a href="https://www.pitchdrive.com/" style=" height: 50px; width: 280px;" target="_blank"><img class="mb-2" src="../static/img/pitchdrive.png" style="height: 50px; width: 280px; margin-top: 25px;" alt=""></a>
-        </div>
-        <div class="col-12 col-md footer-five">
-            <h5>Download App</h5>
-            <div class="footer-app-cont">
-                <a href="https://app.adjust.com/dkn8i2u?label=Fallback&engagement_type=fallback_click">
-                    <img src="../static/img/app_store.svg" alt="check_icon" id="apple_store"
-                         class="img-fluid footer_apple">
-                </a>
-                <a href="https://app.adjust.com/dkn8i2u?label=Fallback&engagement_type=fallback_click">
-                    <img src="../static/img/pm.svg" alt="check_icon" id="play_market" class="img-fluid footer_android">
-                </a>
-            </div>
-        </div>
-        <div class="col-12 col-md footer-four">
-            <h5>Connect with us on</h5>
-            <div class="social-icons" style="display: flex; flex-direction: row; justify-content: space-between; align-items: center;" >
-                <a href="https://twitter.com/data_rita?lang=en"><img src="../static/img/footer_twitter.svg"></a>
-                <a href="https://www.linkedin.com/company/ritapersonaldata/"><img
-                        src="../static/img/footer_linkedin.svg"></a>
-                        <a href="https://www.facebook.com/profile.php?id=100090800397020"><img
-                            src="../static/img/facebook.svg"></a>
-                        <a href="https://discord.gg/U2vygA4s7e"><img
-                            src="../static/img/discord.svg"></a>
-                         
-                                <a href="https://www.tiktok.com/@rita_personal_data"><img
-                                    src="../static/img/tiktok.svg"></a>
-            </div>
-        </div>
-        <div class="col-6 col-md footer-one">
-            <h5>Product</h5>
-            <p><a href="#overview">Overview</a></p>
-            <p><a href="../about.html">About us</a></p>
-        </div>
-        <div class="col-6 col-md footer-two">
-            <h5>Legal</h5>
-            <p><a href="../privacypolicy.html" onclick='sa_event("Terms_of_Privacy_B2B");'>Terms of privacy</a></p>
-            <p><a href="../termsandcondition.html">Terms and conditions</a></p>
-        </div>
-        <div class="col-12 col-md social-icons footer-three">
-            <h5>Contact us</h5>
-            <ul>
-                <li><a href="mailto: info@ritapersonaldata.com"><p>info@ritapersonaldata.com</p></a></li>
-                <li><a href="mailto: info@ritapersonaldata.com"><p>Rita Data B.V.</p></a></li>
-                <li><a href="mailto: info@ritapersonaldata.com"><p>Phone: +32495387902</p></a></li>
-                <li><a href="mailto: info@ritapersonaldata.com"><p>Address: Jacob Van Lennepkade 21H, 1054ZE Amsterdam, The Netherlands</p></a></li>
-                <li><a href="mailto: info@ritapersonaldata.com"><p>Kvk nr: 85293776</p></a></li>
-            </ul>
-        </div>
-
-    </div>
-    <!-- Copyright -->
-    <div class="text-center p-3">
-        © Rita Data B.V. 2023
-    </div>
-    <!-- Copyright -->
-</footer>
-<!-- Footer end -->
-
-<!-- Modal -->
-<div class="modal fade" id="GetAppModal" tabindex="-1" role="dialog" aria-labelledby="GetAppModal"
-     aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-            <div class="border-bottom">
-                <h4 class="modal-title text-center">Get Rita Now</h4>
-            </div>
-            <div class="modal-body">
-                <div class="modal-img-wrap">
-                    <div class="modal-img">
-                        <a href="https://app.adjust.com/dkn8i2u?label=Fallback&engagement_type=fallback_click">
-                            <img src="static/img/app_store.svg" alt="check_icon" id="apple_store"
-                                 class="img-fluid footer_apple">
-                        </a>
-
-                    </div>
-                    <div class="modal-img">
-                        <a href="https://app.adjust.com/dkn8i2u?label=Fallback&engagement_type=fallback_click">
-                            <img src="static/img/pm.svg" alt="check_icon" id="play_market"
-                                 class="img-fluid footer_android">
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<script>
-    var userAgent = navigator.userAgent || navigator.vendor || window.opera;
-
-    if (/android/i.test(userAgent)) {
-        document.getElementById('appStoreButton').style.display = 'none';
-    } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
-        document.getElementById('googlePlayButton').style.display = 'none';
-    }
-</script>
-
-<script>
-    jQuery(".owl-carousel").owlCarousel({
-        autoplay: true,
-        lazyLoad: true,
-        loop: true,
-        margin: 20,
-        /*
-       animateOut: 'fadeOut',
-       animateIn: 'fadeIn',
-       */
-        responsiveClass: true,
-        autoHeight: true,
-        autoplayTimeout: 7000,
-        smartSpeed: 800,
-        nav: false,
-        responsive: {
-            0: {
-                items: 1
-            },
-            600: {
-                items: 2
-            },
-
-            1100: {
-                items: 3
-            }
-        }
-    });
-</script>
-<!-- Main js file -->
-<script src="static/js/script.js "></script>
-
-<script type="text/javascript">
-    function preloadFunc() {
-        // var vid = document.getElementById("video1");
-        // var videoFile = 'static/video/dashboard_mockup2.mov';
-        // $('#video1').attr('src', videoFile);
-        // $("#video1")[0].load();
-    }
-
-    window.onpaint = preloadFunc();
-    document.onreadystatechange = function () {
-        console.log(document.readyState);
-    };
-</script>
-<!-- CounterUp.JS -->
-<script src="static/js/count.js" type="module"></script>
-
-<!-- Twitter universal website tag code -->
-<script>
-    !function (e, t, n, s, u, a) {
-        e.twq || (s = e.twq = function () {
-            s.exe ? s.exe.apply(s, arguments) : s.queue.push(arguments);
-        }, s.version = '1.1', s.queue = [], u = t.createElement(n), u.async = !0, u.src = '//static.ads-twitter.com/uwt.js',
-            a = t.getElementsByTagName(n)[0], a.parentNode.insertBefore(u, a))
-    }(window, document, 'script');
-    // Insert Twitter Pixel ID and Standard Event data below
-    twq('init', 'o5wmg');
-    twq('track', 'PageView');
-
-</script>
-<!-- End Twitter universal website tag code -->
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
-<!-- 100% privacy friendly analytics -->
-<script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
-<noscript><img src="https://queue.simpleanalyticscdn.com/noscript.gif" alt="" referrerpolicy="no-referrer-when-downgrade" /></noscript>
-</body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  </body>
 </html>
